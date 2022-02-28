@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "dde973ef-6a2d-4d29-ae36-6ddcc7f65dea",
+		"_postman_id": "746f6d8e-02ed-403e-a868-0768a4942761",
 		"name": "collection_request_api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -20,7 +20,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/auth/",
+					"raw": "http://127.0.0.1:3000/auth/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -52,7 +52,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/auth/sign_in",
+					"raw": "http://127.0.0.1:3000/auth/sign_in",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -91,7 +91,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/auth/sign_out",
+					"raw": "http://127.0.0.1:3000/auth/sign_out",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -124,9 +124,25 @@
 			"name": "Validate Token",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "client",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "uid",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "http://localhost:3000/auth/validate_token",
+					"raw": "http://127.0.0.1:3000/auth/validate_token",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -147,7 +163,26 @@
 			"name": "Quotes",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "client",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "uid",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": ""
+				}
 			},
 			"response": []
 		}
