@@ -16,9 +16,9 @@
 ## 💼 About the project
 
 <p>
-  This is a simple application made for a stage selection process in the company Inovamind, and follows the REST standard for structuring the project.
+  This is a simple application made for a selection process in the company Inovamind, and follows the REST standard for structuring the project.
 
-  To understand the API, access the [DOC.](https://docs.google.com/document/d/1_jO-IsHB3OvX3H3Fgsla7PBchohmfTwAoVkLMFhWib4/edit?usp=sharing)
+  To understand the API, access the [DOCUMENTATION.](https://docs.google.com/document/d/1_jO-IsHB3OvX3H3Fgsla7PBchohmfTwAoVkLMFhWib4/edit?usp=sharing)
 </p>
 
 ## 🛸 Technologies
@@ -88,7 +88,7 @@ bundle install
 rails s
 ```
 
-**Checking tests(optinal)**
+**Checking tests**
 ```bash
 bundle exec rspec
 ```
