@@ -1,32 +1,74 @@
-# README
+<h1 align="center">
+  Simple Crawler API REST
+</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h3 align="center">
+  A simple Crawler API that makes requests to a website to scrape quotes from famous people.
+</h3>
 
-Things you may want to cover:
+<p align="center">
+  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>
+</p>
 
-* Ruby version
 
-Ruby 3.0.3
+## 💼 About the project
 
-* System dependencies
+<p>
+  This is a simple application made for a stage selection process in the company Inovamind, and follows the REST standard for structuring the project.
 
-* Configuration
+  To understand the API access the [DOC.](https://docs.google.com/document/d/1_jO-IsHB3OvX3H3Fgsla7PBchohmfTwAoVkLMFhWib4/edit?usp=sharing)
+</p>
 
-* Database creation and initialization
-# Linux
-Para que o banco de dados MongoDB rode normalmente em sua máquina, recomendo que use o docker.
-Para instalar o docker em sua máquina siga a documentação oficial: documentation
+## 🛸 Technologies
 
-Feito isso, siga com o seguinte comando em seu terminal:
+Technologies that I used to develop this api
 
-# Caso não tenha a imagem mongo:latest em seu docker, ele irá baixar a imagem do DockerHub.
-$ sudo docker run --name mongo_db -p 27017:27017 -d mongo:latest
+- [Ruby](https://www.ruby-lang.org/pt/)
+- [Rails](https://rubyonrails.org/)
+- [Devise Token Auth](https://github.com/lynndylanhurley/devise_token_auth)
+- [Mongodb](https://docs.mongodb.com/mongoid/current/)
+- [Rspec](https://rspec.info/)
+- [Postman](https://www.postman.com/)
 
-* How to run the application
 
-* Services (job queues, cache servers, search engines, etc.)
+## 💻 Getting started
 
-* Deployment instructions
+### Requirements
 
-* ...
+- [Ruby](https://www.ruby-lang.org/pt/)
+- [Gem Rails](https://rubyonrails.org/)
+- [Gem Bundler](https://bundler.io/)
+- [Docker](https://docs.docker.com/engine/install/ubuntu/)
+- [Postman](https://www.postman.com/)
+
+**Clone the project and access the folder**
+
+```bash
+$ git clone https://github.com/MihaelGuedes/field_collection.git && cd field_collection
+```
+
+**Up the database container**
+```bash
+docker run --name mongo_database -p 27017:27017 -d mongo:latest
+```
+
+**Run the gems installation**
+```bash
+bundle install
+```
+
+**Run the API**
+```bash
+rails s
+```
+
+**Checking tests(optinal)**
+```bash
+$ bundle exec rspec
+```
+
+----------------------------------------------------------------------------------
+
+Feito com 💙 por Mihael Guedes 👋 [Acesse meu linkedin](https://www.linkedin.com/in/mihael-guedes-9470b11ba/)
