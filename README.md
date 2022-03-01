@@ -18,7 +18,7 @@
 <p>
   This is a simple application made for a selection process in the company Inovamind, and follows the REST standard for structuring the project.
 
-  To understand the API, access the [DOCUMENTATION.](https://docs.google.com/document/d/1_jO-IsHB3OvX3H3Fgsla7PBchohmfTwAoVkLMFhWib4/edit?usp=sharing)
+  To understand the API, access the [DOCUMENTATION.](https://spice-spandex-6d5.notion.site/Simple-Crawler-API-Documentation-1f7f3c504f3b498c8781102c033bc250)
 </p>
 
 ## 🛸 Technologies
@@ -29,6 +29,7 @@ Technologies that I used to develop this api
 - [Rails](https://rubyonrails.org/)
 - [Devise Token Auth](https://github.com/lynndylanhurley/devise_token_auth)
 - [Mongodb](https://docs.mongodb.com/mongoid/current/)
+- [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - [Rspec](https://rspec.info/)
 - [Postman](https://www.postman.com/)
 
@@ -61,7 +62,7 @@ Technologies that I used to develop this api
 - [Ruby](https://www.ruby-lang.org/pt/)
 - [Gem Rails](https://rubyonrails.org/)
 - [Gem Bundler](https://bundler.io/)
-- [Docker](https://docs.docker.com/engine/install/ubuntu/)
+- [Docker/Docker-Compose](https://docs.docker.com/engine/install/ubuntu/)
 - [Postman](https://www.postman.com/)
 
 You can follow this tutorial for installing Ruby, RoR and Bundle (remember to use the similar versions as in the project).
@@ -73,26 +74,19 @@ You can follow this tutorial for installing Ruby, RoR and Bundle (remember to us
 git clone https://github.com/MihaelGuedes/simple_crawler_api.git && cd field_collection
 ```
 
-**Up the database container with docker**
+**To run the application using Docker Compose**
 ```bash
-sudo docker run --name mongo_database -p 27017:27017 -d mongo:latest
+sudo docker-compose up --build
 ```
 
-**Run the gems installation**
+**To check the tests run the following commands with all requirements installed**
 ```bash
+# install all gems
 bundle install
-```
 
-**Run the API**
-```bash
-rails s
+# exec tests with rspec
+rspec
 ```
-
-**Checking tests**
-```bash
-bundle exec rspec
-```
-
 
 ### Testing the API with Postman
 
@@ -112,13 +106,15 @@ bundle exec rspec
 
 ![validate](https://user-images.githubusercontent.com/61971675/155938985-c9a5ba3e-e65c-461f-a70f-34379ee7d272.gif)
 
-**5. Finally, to access the tag search, which in this case is the main function of the API, go to the Quotes request, passing the credentials received in step 2, and finally put in the url of the request the tag you want to search. For example: "/quotes/love".**
-
-![Quotes](https://user-images.githubusercontent.com/61971675/155939018-cad90762-70fc-4f09-9f0e-9786bf960ade.gif)
-
-**6. If you wish to sign out at any point from your account, go to the Sign Out request, passing the credentials you received in step 2.(optional)**
+**5. If you wish to sign out at any point from your account, go to the Sign Out request, passing the credentials you received in step 2.(optional)**
 
 ![sign_out](https://user-images.githubusercontent.com/61971675/155939058-8b2b47d9-fe09-4de7-b072-60c58f0a785d.gif)
+
+### Request to /quotes/{search_tag}
+
+Finally, to access the tag search, which in this case is the main function of the API, go to the Quotes request, passing the credentials received in step 2, and finally put in the url of the request the tag you want to search. For example: "/quotes/love".
+
+![Quotes](https://user-images.githubusercontent.com/61971675/155939018-cad90762-70fc-4f09-9f0e-9786bf960ade.gif)
 
 ----------------------------------------------------------------------------------
 
