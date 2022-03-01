@@ -71,7 +71,7 @@ You can follow this tutorial for installing Ruby, RoR and Bundle (remember to us
 **Clone the project and access the folder**
 
 ```bash
-git clone https://github.com/MihaelGuedes/simple_crawler_api.git && cd field_collection
+git clone https://github.com/MihaelGuedes/simple_crawler_api.git && cd simple_crawler_api
 ```
 
 **To run the application using Docker Compose**
